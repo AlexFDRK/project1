@@ -25,17 +25,16 @@
 
 .logo{
   width: 183px;
-  height: 32px;
-  z-index: 2;
 }
 
 .logo_place_header{
   position: absolute;
   top: 30px;
   left: 64px;
+  height: 32px;
 }
 
-.header__titel{
+.header__title{
   margin-left: 64px;
   width: 730px;
   line-height: 96px;
@@ -45,6 +44,7 @@
 }
 
 .header__subtitel{
+  margin: 0px;
   position: absolute;
   width: 388px;
   line-height: 25px;
@@ -83,7 +83,7 @@
 }
 
 .description{
-  margin: 100px 0px 0px 0px;
+  margin: 100px 0 0;
 }
 
 .two-columns{
@@ -91,7 +91,6 @@
   margin-left: auto;
   margin-right: auto;
   display: flex;
-  flex-direction: row;
   justify-content: space-between;
   align-items: flex-start;
 }
@@ -120,15 +119,15 @@
 }
 
 .two-columns__paragraph{
-  margin: 0;
+  margin: 0 0 30px 0;
   padding: 0;
 }
 
-.two-columns__middle{
-  margin: 30px 0px;
+.two-columns__paragraph:last-of-type{
+  margin: 0px 0px;
 }
 
-.letter{
+.span-accent{
   font-size: 24px;
   line-height: 34px;
   font-weight: bold;
@@ -163,9 +162,6 @@
 
 .table{
   width: 1100px;
-}
-
-.table__cells{
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
@@ -178,7 +174,7 @@
   width: 250px;
 }
 
-.table__cell__heading{
+.table__heading{
   margin: 0px;
   padding: 0px;
   line-height: 1.15;
@@ -186,7 +182,7 @@
   font-weight: bold;
 }
 
-.table__cell__text{
+.table__text{
   margin: 20px 0px 0px 0px;
   padding: 0px;
   line-height: 1.2;
@@ -208,7 +204,7 @@
   background-size: 867px 637px;
 }
 
-.feyman__titel{
+.feyman__title{
   margin: 100px 0px 0px 0px;
   padding: 0;
   width: 648px;
@@ -218,7 +214,7 @@
   font-weight: bold;
 }
 
-.feyman__subtitel{
+.feyman__subtitle{
   margin: 70px 0px 0px 0px;
   padding: 0;
   text-align: center;
@@ -258,29 +254,27 @@
 
 .section-title_theme_dark{
   margin-top: 90px;
-  width: 60%;
   color: white;
   z-index: 2;
 }
 
 .section-subtitle_theme_dark{
-  width: 60%;
   color: white;
   z-index: 2;
 }
 
 .table_theme_dark{
   color: white;
-  margin-bottom: 90px;
+  margin: 0px auto 90px auto;
   z-index: 2;
 }
 
-/* и элемента с модификатором вида ключ-значение */
-.table__cell_theme_dark {
-  width: 200px;
-  margin-right: 0;
+.table__cell_theme_dark{
   margin-top: 80px;
+  width: 200px;
 }
+
+/* и элемента с модификатором вида ключ-значение */
 
 .footer{
   min-height: 350px;
@@ -336,6 +330,7 @@
   margin: 0px;
   padding: 0px;
   color: white;
+  list-style-type: none;
   text-decoration: none;
   line-height: 30px;
   font-size: 18px;
