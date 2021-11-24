@@ -65,8 +65,10 @@
       <section class="video">
         <h2 class="section-title">Видео нa TED</h2>
         <p class="section-subtitle">Для тех, кто любит прокрастинировать</p>
-        <iframe title="Видео Джош Кауфманн" width="560" height="400" src="https://www.youtube.com/embed/5MgBikgcWnY"></iframe>
-        <iframe title="Видео Тим Урбан" width="560" height="400" src="https://www.youtube.com/embed/arj7oStGLkU"></iframe>
+        <div class="video__iframes">
+          <iframe class="video__iframe" title="Видео Джош Кауфманн" width="560" height="400" src="https://www.youtube.com/embed/5MgBikgcWnY"></iframe>
+          <iframe class="video__iframe" title="Видео Тим Урбан" width="560" height="400" src="https://www.youtube.com/embed/arj7oStGLkU"></iframe>
+        </div>
       </section>
 
       <section class="oakley">
@@ -127,9 +129,18 @@
         </div>
       </section>
 
-      <section class="khan"> 
-        <p class="section-subtitle">Салман Хан</p>
-        <h2 class="section-title">Весь мир — школа</h2>
+      <section class="khan">
+        <div class="khan__container">
+          <p class="khan__autor">Салман Хан</p>
+          <h2 class="khan__title">Весь мир — школа</h2>
+          <p class="khan__quote">Страсть и новаторство Сала Хана меняют процесс обучения миллионов студентов по всему миру. Книгу «Весь мир — школа» нужно прочитать всем, кто занимается образованием — так учащиеся повсюду смогут получить навыки и знания, которые приносят успех в школе, карьере и жизни.</p>
+          <p class="khan__quote-author">Джордж Лукас</p>
+          <div class="khan__quote-author-subline">Кинорежиссер, продюсер</div>
+          <div class="khan__book-container">
+            <img class="khan__book-pic" src="./images/khan-book.jpg" alt="khan-book">
+            <a class="khan__buy-link" href="#">Купить книгу&rarr;</a>
+          </div>
+        </div>
       </section>
 
       <section class="kaufman">
@@ -177,6 +188,17 @@
               <h3 class="table__heading table__heading_theme_dark">10</h3>
               <p class="table__text table__text_dark">Уделяйте внимание количеству и скорости.</p>
             </div>
+        </div>
+      </section>
+
+      <section class="resources">
+        <h2 class="section-title">Полезные ресурсы</h2>
+        <p class="section-subtitle">Больше материалов о техниках и лайфхаках обучения</p>
+        <div class="resources__logo-zone">
+          <img class="resources__logo" src="./images/resources-arzamas.svg" alt="arzamas"/>
+          <img class="resources__logo" src="./images/resources-n1.svg" alt="n1"/>
+          <img class="resources__logo" src="./images/resources-strelka.svg" alt="strelka"/>
+          <img class="resources__logo" src="./images/resources-polka.svg" alt="polka"/>
         </div>
       </section>
     </main>
